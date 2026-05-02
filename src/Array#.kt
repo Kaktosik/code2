@@ -1,10 +1,10 @@
 import java.util.Scanner
 
-fun main(){
-    val scan= Scanner(System.`in`)
+fun main() {
+    val scan = Scanner(System.`in`)
 
 
-    //array 1
+    //1
     /*val n = scan.nextInt()
     val array = IntArray(n)
     var t = 1
@@ -16,7 +16,7 @@ fun main(){
         print("${array[i]} ")
     }*/
 
-    //array 2  my ver.
+    //2  my ver.
     /*val n = scan.nextInt()
     val array = IntArray(n)
     var ch = 2
@@ -26,7 +26,7 @@ fun main(){
     }
     for (i in 0 until n) print("${array[i]} ")*/
 
-    //array 2  ver 2.0
+    //2  ver 2.0
     /*val n = scan.nextInt()
     val arr = IntArray(n) //0 0 0 0
     arr[0] = 1 // ^ 0
@@ -40,7 +40,7 @@ fun main(){
         print("$e ")
     }*/
 
-    //array 3
+    //3
     /*val n = scan.nextInt()
     val array = IntArray(n)
     var t = 1
@@ -53,7 +53,7 @@ fun main(){
     for (i in 0 until n) print("${array[i]} ")*/
 
 
-    //array 3 ver 2.0
+    //3 ver 2.0
     /*val n = scan.nextInt()
     val array = IntArray(n)
     array[0] = scan.nextInt()
@@ -63,7 +63,198 @@ fun main(){
     }
     for (i in 0 until n) print("${array[i]} ")*/
 
-    //array 4
+    //4
+    /*val n = scan.nextInt()
+    val array = IntArray(n)
+    array[0] = scan.nextInt()
+    val d = scan.nextInt()
+    for (i in 1 until n){
+        array[i] = array[i - 1] + d *  d
+    }
+    for (i in 0 until n) print("${array[i]} ")*/
+
+    //5
+    /*val n = scan.nextInt()
+    val a= IntArray(n)
+    a[0] = 1
+    a[0] = 1
+    for (i in 2 until n){
+        a[i] = a[i - 1] + a[i - 2]
+    }
+
+    for (i in 0 until n) print("${a[i]} ")*/
+
+    //6
+    /*val n = scan.nextInt()
+    val a = IntArray(n)
+    a[0] = scan.nextInt()
+    a[1] = scan.nextInt()
+    var k = a[0] + a[1]
+    for (i in 2 until n){
+        a[i] = k
+        k *= i
+    }
+    for (i in 0 until n){
+        print("${a[i]} ")
+    }*/
+
+    //7
+    /*val n = scan.nextInt()
+    val a = IntArray(n)
+    for (i in 0 downTo n){
+    }*/
+
+
+    //8
+    /*val n = scan.nextInt()
+    val a = IntArray(n)
+    var d = 0
+    for (i in 0 until n){
+        a[i] = scan.nextInt()
+
+        if (a[i] % 2 != 0){
+            d++
+            print("${a[i]} ")
+        }
+    }
+    println(". $d количество нечетных чисел")*/
+
+
+    //9
+    /*val n = scan.nextInt()
+    val a = IntArray(n)
+    var d = 0
+    for (i in 0 until n) {
+        a[i] = scan.nextInt()
+    }
+    for (i in n-1 downTo 0){
+        if (a[i] % 2 != 1) {
+            d++
+            print("${a[i]} ")
+        }
+    }
+    println(". $d количество чётных чисел есть")*/
+
+
+    //10
+    /*val n = scan.nextInt()
+    val a = IntArray(n)
+    var d = 0
+    var b = 0
+    for (i in 0 until n){
+        a[i] = scan.nextInt()
+    }
+    for (i in n-1 downTo 0){
+        if (a[i] % 2 != 0){
+            b++
+            print("${a[i]} ")
+        }
+    }
+println()
+    for (i in 0 until n){
+        if (a[i] % 2 != 1){
+            d++
+            print("${a[i]} ")
+        }
+    }
+    println()
+    println("$b количество нечетных чисел\n$d количество четных чисел")
+*/
+
+    //11
+    /*val n = scan.nextInt()
+    val a = IntArray(n)
+    for (i in 0 until n){
+        a[i] = scan.nextInt()
+    }
+    val k = scan.nextInt()
+    for (i in k until n step k){
+        print("${a[i]} ")
+    }*/
+
+    //12
+    /*val n = scan.nextInt()
+    val a = IntArray(n)
+    for (i in 0 until n){
+     a[i] = scan.nextInt()
+    }
+    for (i in 0 until n step 2){
+        print("${a[i]} ")
+    }*/
+
+    //13
+    /*val n = scan.nextInt()
+    val a = IntArray(n)
+    for (i in 0 until n) {
+        a[i] = scan.nextInt()
+    }
+    for (i in n-2 downTo 0 step 2){
+        print("${a[i]} ")
+    }*/
+
+
+    //14
+    /*val n = scan.nextInt()
+    val a = IntArray(n)
+    for (i in 0 until n){
+        a[i] = scan.nextInt()
+    }
+    for (i in 0 until n step 2){
+        print("${a[i]} ")
+    }
+    println()
+    for (i in 1 until n step 2){
+        print("${a[i]} ")
+    }*/
+
+    //15
+    /*val n = scan.nextInt()
+    val a = IntArray(n)
+    for (i in 0 until n) {
+        a[i] = scan.nextInt()
+    }
+    for (i in 0 until n step 2){
+        print("${a[i]} ")
+    }
+    println()
+    for (i in n-1 downTo 0 step 2){
+        print("${a[i]} ")
+    }*/
+
+    //16
+    /*val n = scan.nextInt()
+    val a = IntArray(n)
+    for (i in 0 until n){
+        a[i] = scan.nextInt()
+    }
+    for (i in 0 until n/2){
+        print("${a[i]} ${a[n-1-i]}  ")
+    }
+    if (n%2!=0){
+        print("${a[n / 2]}")
+    }*/
+
+    //17
+    /*val n = scan.nextInt()
+    val a = IntArray(n) { scan.nextInt() }
+    var s = 0
+    var e = n - 1
+    while (s <= e){
+        print("${a[s]} ")
+        s++
+        if (s <= e){
+            print("${a[s]} ")
+            s++
+        }
+        repeat(2) {
+            if (e >= s) {
+                print("${a[e]} ")
+                e--
+            }
+        }
+    }*/
+
+    //18
 
 
 
@@ -76,6 +267,23 @@ fun main(){
 
 
 
+
+
+
+
+    //24
+    val n = scan.nextInt()
+    val a = IntArray(n){ scan.nextInt() }
+    var d = a[1] - a[0] //ayirma
+
+    for(i in 2 until n){
+        if(d != a[i] - a[i - 1]){
+            d = 0
+            break
+        }
+    }
+
+    print(d)
 
 
 
