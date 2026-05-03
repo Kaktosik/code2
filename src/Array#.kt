@@ -255,24 +255,79 @@ println()
     }*/
 
     //18
+    /*val n = scan.nextInt()
+    val a = IntArray(n){scan.nextInt()}
+    for (i in 0 until n){
+        if (a[i] < a[n-1] ){
+            print("${a[i]} ")
+        }
+    }*/
 
 
+    //19
+    /*val n = scan.nextInt()
+    val a = IntArray(n){scan.nextInt()}
+    var j = 0
+    for (i in 1 until n-1){
+        if (a[i] > a[0] && a[i] < a[n-1]){
+            j = i
+        }
+    }
+    println(j)*/
 
+    //20
+    /*val n = scan.nextInt()
+    val k = scan.nextInt()
+    val l = scan.nextInt()
+    val a = IntArray(n){scan.nextInt()}
+    var sum = 0
+    for (i in l .. k){
+        sum+=a[i]
+    }
+    print(sum)*/
 
+    //21
+    /*val n = scan.nextInt()
+    val l = scan.nextInt()
+    val k = scan.nextInt()
+    val a = IntArray(n){scan.nextInt()}
+    var s = 0f
+    for (i in l .. k){
+        s += a[i]
+    }
+    var oa = s / (k - l + 1)
+    print(oa)*/
 
+    //22
+    /*val n = scan.nextInt()
+    val l = scan.nextInt()
+    val k = scan.nextInt()
+    val a = IntArray(n){scan.nextInt()}
+    var s = 0
+    for (i in 0 until n){
+        if (i !in l..k){
+            s+=i
+        }
+    }
+    print(s)*/
 
-
-
-
-
-
-
-
-
+    //23
+    /*val n = scan.nextInt()
+    val l = scan.nextInt()
+    val k = scan.nextInt()
+    val a = IntArray(n){scan.nextInt()}
+    var s = 0
+    for (i in 0 until n){
+        if (i !in l .. k){
+            s += a[i]
+        }
+    }
+    val oa = s / (k - l + 1)
+    print(oa)*/
 
 
     //24
-    val n = scan.nextInt()
+    /*val n = scan.nextInt()
     val a = IntArray(n){ scan.nextInt() }
     var d = a[1] - a[0] //ayirma
 
@@ -283,7 +338,85 @@ println()
         }
     }
 
-    print(d)
+    print(d)*/
+
+    //25
+    /*val n = scan.nextInt()
+    val a = IntArray(n){scan.nextInt()}
+    var d = a[1] - a[0]
+    for (i in 2 until n){
+        if (d != a[i] - a[i - 1] * i){
+            d=0
+            break
+        }
+    }
+    print(d)*/
+
+    //26
+    /*val n = scan.nextInt()
+    val a = IntArray(n){scan.nextInt()}
+    var otvet = 0
+    for (i in 0 until n - 1){
+        val s = a[i] - a[i + 1]
+        if (s % 2 == 0){
+            otvet = i
+            break
+        }
+    }
+    println(otvet)*/
+
+    //27
+    /*val n = scan.nextInt()
+    val a = IntArray(n){scan.nextInt()}
+    var o = 0
+    for (i in 0 until n-1){
+        val s = a[i] - a[i+1]
+        if (s < 0){
+            o = i
+            break
+        }
+    }
+    println("$o")
+*/
+
+    //28
+    /*val n = scan.nextInt()
+    val a = IntArray(n){scan.nextInt()}
+    var min = a[0]
+    for (i in 2 until n step 2){
+        if (min > a[i]){
+            min = a[i]
+        }
+    }
+    print(min)*/
+
+    //29
+    /*val n = scan.nextInt()
+    val a = IntArray(n){scan.nextInt()}
+    var max = a[0]
+    for (i in 1 until n step 2){
+        if (max < a[i]){
+            max = a[i]
+        }
+    }
+    println(max)*/
+
+    //30
+    /*val n = scan.nextInt()
+    val a = IntArray(n){scan.nextInt()}
+    var k = 0
+    var s = 0
+    for (i in 0 until n){
+        if (a[i] > a[i+1]){
+            s = i
+            print("${a[i]} , ${a[i+1]}")
+        }
+    }
+    println("$s")*/
+
+
+
+
 
 
 
