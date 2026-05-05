@@ -306,7 +306,7 @@ println()
     var s = 0
     for (i in 0 until n){
         if (i !in l..k){
-            s+=i
+            s+=a[i]
         }
     }
     print(s)*/
@@ -405,15 +405,29 @@ println()
     /*val n = scan.nextInt()
     val a = IntArray(n){scan.nextInt()}
     var k = 0
-    var s = 0
-    for (i in 0 until n){
-        if (a[i] > a[i+1]){
-            s = i
-            print("${a[i]} , ${a[i+1]}")
+    for (i in 0 until n-1){
+        if (a[i] > a[+1]){
+            k++
+            print("$i ")
         }
     }
-    println("$s")*/
+    println("\n$k ")*/
 
+
+    //31
+    /*val n = scan.nextInt()
+    val a = IntArray(n){scan.nextInt()}
+    var k = 0
+    for (i in 1 until n){
+        if (a[i-1] < a[i]){
+            k++
+            print("$i ")
+        }
+    }
+    print("\n$k ")
+*/
+
+    //40
 
 
 
