@@ -1,4 +1,5 @@
 import java.util.Scanner
+import kotlin.coroutines.CoroutineContext
 
 fun main() {
     val scan = Scanner(System.`in`)
@@ -415,19 +416,70 @@ println()
 
 
     //31
-    /*val n = scan.nextInt()
+    val n = scan.nextInt()
     val a = IntArray(n){scan.nextInt()}
+    /*val a = IntArray(n){scan.nextInt()}
     var k = 0
-    for (i in 1 until n){
+    for (i in n - 1 downTo 1){
         if (a[i-1] < a[i]){
             k++
             print("$i ")
         }
     }
-    print("\n$k ")
-*/
+    print("\n$k ")*/
 
-    //40
+
+    //32
+    /*val a = IntArray(n){scan.nextInt()}
+    var k = 0
+    for (i in 1 until n-1){
+        if (a[i] < a[i+1] && a[i-1] > a[i]){
+            k++
+            print("$i ")
+        }
+    }
+    println("\n$k")*/
+
+
+
+    //33
+    /*var k = 0
+    for (i in 1 until n-1){
+        if (a[i] > a[i+1] && a[i] > a[i-1]){
+            k++
+            print("$i ")
+        }
+    }
+    println("\n$k ")*/
+
+    //34
+    /*var s = 0
+    var k = 0
+    for (i in 1 until n-1){
+        if (a[i] < a[i+1] && a[i] < a[i-1]){
+            if (a[i] > s){
+                k++
+                print("$i ")
+            }
+            s = a[i]
+        }
+    }
+    println("\n$k")*/
+
+    //35
+    //1 3 2 5 8 6
+    /*var k = 0
+    var s = Int.MAX_VALUE
+    for (i in 1 until n-1){
+        if (a[i] > a[i+1] && a[i] > a[i-1]){
+            s = a[i]
+            if (a[i] < s){
+                k++
+                print("$i ")
+            }
+        }
+    }
+    println("\n$k")*/
 
 
 
