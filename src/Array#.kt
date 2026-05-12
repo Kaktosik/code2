@@ -1,5 +1,6 @@
 import java.util.Scanner
 import kotlin.coroutines.CoroutineContext
+import kotlin.math.abs
 
 fun main() {
     val scan = Scanner(System.`in`)
@@ -454,32 +455,92 @@ println()
 
     //34
     /*var s = 0
-    var k = 0
     for (i in 1 until n-1){
         if (a[i] < a[i+1] && a[i] < a[i-1]){
             if (a[i] > s){
-                k++
-                print("$i ")
+                s = a[i]
             }
-            s = a[i]
         }
     }
-    println("\n$k")*/
+    println(s)*/
 
     //35
     //1 3 2 5 8 6
-    /*var k = 0
-    var s = Int.MAX_VALUE
+    /*var s = 0
     for (i in 1 until n-1){
         if (a[i] > a[i+1] && a[i] > a[i-1]){
-            s = a[i]
-            if (a[i] < s){
-                k++
-                print("$i ")
+            if (a[i] > s){
+                s = a[i]
             }
         }
     }
-    println("\n$k")*/
+    println(s)*/
+
+
+    //36
+    /*var max = a[0]
+    for (i in 1 until n-1){
+        val lmx = a[i] > a[i+1] && a[i] > a[i-1]
+        val lmi = a[i] < a[i+1] && a[i] < a[i-1]
+
+        if (!(lmx || lmi) && max < a[i]) max = a[i]
+    }
+    println(max)*/
+
+    //37
+    /*var cc = 0
+    var k = false
+    for (i in 1 until n){
+        if (a[i] > a[i-1]){
+            if (!k){
+                cc++
+            }
+            k = true
+        } else {
+            k = false
+        }
+    }
+    println(cc)*/
+
+    //38
+    /*var cc = 0
+    var k = false
+    for (i in 1 until n){
+        if (a[i] < a[i-1]){
+            if (!k){
+                cc++
+            }
+            k = true
+        } else {
+            k = false
+        }
+    }
+    println(cc)*/
+
+    //39
+    /*var cc = 0
+    var k = false
+    var l = false
+    for (i in 1 until n){
+        if (a[i] > a[i-1]){
+            if (!l) cc++
+            l = true
+        } else l = false
+
+        if (a[i] < a[i-1]){
+            if (!k) cc++
+            k = true
+        } else k = false
+    }
+    println(cc)*/
+
+
+    //40
+
+
+
+
+
 
 
 
