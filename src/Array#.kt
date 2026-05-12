@@ -417,8 +417,8 @@ println()
 
 
     //31
-    val n = scan.nextInt()
-    val a = IntArray(n){scan.nextInt()}
+    /*val n = scan.nextInt()
+    val a = IntArray(n){scan.nextInt()}*/
     /*val a = IntArray(n){scan.nextInt()}
     var k = 0
     for (i in n - 1 downTo 1){
