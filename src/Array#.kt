@@ -1,10 +1,12 @@
 import java.util.Scanner
 import kotlin.coroutines.CoroutineContext
 import kotlin.math.abs
+import kotlin.math.min
 
 fun main() {
     val scan = Scanner(System.`in`)
-
+    val n = scan.nextInt()
+    val a = IntArray(n){scan.nextInt()}
 
     //1
     /*val n = scan.nextInt()
@@ -417,8 +419,6 @@ println()
 
 
     //31
-    /*val n = scan.nextInt()
-    val a = IntArray(n){scan.nextInt()}*/
     /*val a = IntArray(n){scan.nextInt()}
     var k = 0
     for (i in n - 1 downTo 1){
@@ -536,7 +536,29 @@ println()
 
 
     //40
+    /*val r = scan.nextInt()
+    var cl = a[0]
+    var minL = Math.abs(r - cl)
+    for (i in 1 until n){
+        var x = abs(r - a[i])
+        if (x < minL){
+            minL = x
+            cl = a[i]
+        }
+    }
+    println(minL)
+    println(cl)*/
 
+
+    //41
+    /*var max = a[0]
+    for (i in 1 until n){
+        val s = a[i] + a[i-1]
+        if (s > max){
+            max = a[i]
+        }
+    }
+    println(max)*/
 
 
 
