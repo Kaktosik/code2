@@ -551,20 +551,75 @@ println()
 
 
     //41
-    /*var max = a[0]
-    for (i in 1 until n){
+    /*var e1 = a[0]
+    var e2 = a[1]
+    var maxSum = e1 + e2
+    for (i in 2 until n){
         val s = a[i] + a[i-1]
-        if (s > max){
-            max = a[i]
+        if (s > maxSum){
+            e1 = a[i-1]
+            e2 = a[i]
+            maxSum = s
         }
     }
-    println(max)*/
+    println("$e1 $e2")*/
 
 
+    //42
+    /*val r = scan.nextInt()
+    var minL = Int.MAX_VALUE
+    var i1 = -1
+    var i2 = -1
+    for (i in 0 until n-1){
+        val x = abs(r-(a[i] + a[i +1]))
+        if (x < minL ){
+            minL = x
+            i1 = i
+            i2 = i+1
+        }
+    }
+    println(a[i1])
+    println(a[i2])
+    println(minL)*/
 
 
+    //43
+    /*var counter = 1
+    for (i in 0 until n-1){
+        if (a[i] != a[i+1]) counter++
+    }
+    println(counter)*/
 
+    //44
+    /*for (i in 0 until n-1){
+        for (j in i+1 until n){
+            if (a[i] == a[j]){
+                println("${i+1} ${j+1}")
+            }
+        }
+    }*/
 
+    //45
+    /*for (i in 0 until n-1){
+        if (a[i] == a[i+1]){
+            print("${a[i]} ")
+        }
+    }*/
+
+    //46
+    /*val r = scan.nextInt()
+    var cl = a[0]
+    var minL = abs(r - cl)
+    for (i in 0 until n-1){
+        val x = abs(r - (a[i]+a[i+1]))
+        if (x < minL){
+            minL = x
+            cl = a[i]
+        }
+    }
+    print("$minL $cl ")*/
+
+    //47
 
 
 
