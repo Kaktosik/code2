@@ -780,8 +780,10 @@ println()
 
     //58
     /*val b = IntArray(n)
+    var k = 0
     for (i in 1 until n){
-        b[i] = b[i-1] + a[i]
+        k += b[i-1] + a[i]
+        b[i] = k
     }
     println(a.joinToString())
     println(b.joinToString())*/
@@ -800,9 +802,29 @@ println()
     //60
     /*val b = IntArray(n)
     for (i in 1 until n){
-
+        b[i] = a[i-1] + a[i]
     }
     println(b.joinToString())*/
+
+    //61
+    /*val b = FloatArray(n)
+    for (i in 0 until n-1){
+        b[i] = (a[i] + a[i+1].toFloat()) / 2
+    }
+    println(b.joinToString())*/
+
+    //62
+    /*val b = IntArray(n)
+    val c = IntArray(n)
+    for (i in 0 until n){
+        if (a[i] > 0){
+            b[i] = a[i]
+        } else {
+            c[i] = a[i]
+        }
+    }
+    println(b.joinToString())
+    println(c.joinToString())*/
 
 
     //63
@@ -821,6 +843,16 @@ println()
     while (i < n){
         c[k++] = b[j++]
     }*/
+
+
+    //64
+
+
+
+
+
+
+
 
 
 
