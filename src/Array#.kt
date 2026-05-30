@@ -6,7 +6,7 @@ import kotlin.math.min
 fun main() {
     val scan = Scanner(System.`in`)
     val n = scan.nextInt()
-    val a = IntArray(n){scan.nextInt()}
+    var a = IntArray(n){scan.nextInt()}
 
     //1
     /*val n = scan.nextInt()
@@ -607,21 +607,236 @@ println()
     }*/
 
     //46
-    /*val r = scan.nextInt()
-    var cl = a[0]
-    var minL = abs(r - cl)
-    for (i in 0 until n-1){
-        val x = abs(r - (a[i]+a[i+1]))
-        if (x < minL){
-            minL = x
-            cl = a[i]
+    /*var i1 = -1
+    var i2 = -1
+    val r = scan.nextInt()
+    var minLength = Int.MAX_VALUE
+
+    for(i in 0 until n - 1){
+        for(j in i + 1 until n){
+            val s = a[i] + a[j]
+
+            val x = abs(r - s)
+            if(x < minLength){
+                minLength = x
+                i1 = i
+                i2 = j
+            }
         }
     }
-    print("$minL $cl ")*/
+    println(minLength)
+    println("$i1 $i2")*/
 
     //47
+    /*var c = 0
+    for (i in 0 until n-1){
+        var isP = false
+        for (j in 0 until i){
+            if (a[i] == a[j]){
+                isP = true
+                break
+            }
+        }
+        if (!isP) c++
+    }
+    println(c)*/
 
 
+    //48
+    /*var mc = 0
+    for (i in 0 until n-1){
+        var bo = false
+        for (j in 1 until i){
+            if (a[i] == a[j]){
+                mc++
+            } else {
+                bo = true
+                break
+            }
+        }
+    }
+    println(mc)*/
+
+    //49
+    /*var samozvanec = -1
+    for (i in 0 until n-1){
+        if (a[i] !in 0..n){
+            println(i)
+            break
+        }
+        var tf = false
+        for (j in 0 until i){
+            if (a[i] > a[j]){
+                samozvanec = 0
+            } else {
+                samozvanec = i
+                tf = true
+            }
+        }
+        if (!tf) samozvanec = 0
+    }
+    println(samozvanec)*/
+
+    //50
+    /*var samozvanec = -1
+    for (i in 0 until n-1){
+        if (a[i] !in 0..n){
+            println(i)
+            break
+        }
+        var tf = false
+        for (j in 0 until i){
+            if (a[i] > a[j]){
+                samozvanec = 0
+            } else {
+                tf = true
+                samozvanec = i
+            }
+        }
+    }
+    println(samozvanec)*/
+
+
+    //51
+    /*var b = IntArray(n){scan.nextInt()}
+    for (i in 0 until n){
+        val t = a[i]
+        a[i] = b[i]
+        b[i] = t
+    }
+    println(a.joinToString())
+    println(b.joinToString())*/
+
+
+    //52
+    /*val b = FloatArray(n)
+    for (i in 0 until n){
+        if (a[i] < 5){
+            b[i] = a[i] * 2f
+        } else {
+            b[i] = a[i] / 2f
+        }
+    }
+    println(a.joinToString())
+    println(b.joinToString())*/
+
+    //53
+    /*val b = IntArray(n){scan.nextInt()}
+    val c = IntArray(n)
+    for (i in 0 until n){
+        if (a[i] > b[i]){
+            c[i] = a[i]
+        } else {
+            c[i] = b[i]
+        }
+    }
+    println(a.joinToString())
+    println(b.joinToString())
+    println(c.joinToString())*/
+
+
+    //54
+    /*val b = IntArray(n)
+    for (i in 0 until n){
+        if (a[i] % 2 == 0){
+            b[i] = a[i]
+        }
+    }
+    println(a.joinToString())
+    println(b.joinToString())*/
+
+
+    //55
+    /*val b = IntArray(n)
+    for (i in 0 until n step 2){
+        b[i] = a[i]
+    }
+    println(a.joinToString())
+    println(b.joinToString())*/
+
+
+    //56
+    /*val b = IntArray(n)
+    for (i in 2 until n step 3){
+        b[i] = a[i]
+    }
+    println(a.joinToString())
+    println(b.joinToString())*/
+
+
+    //57
+    /*val b = IntArray(n)
+    val c = IntArray(n)
+    for (i in 0 until n step 2){
+        b[i] = a[i]
+    }
+    for (i in 1 until n step 2){
+        c[i] = a[i]
+    }
+
+    println(a.joinToString())
+    println(b.joinToString())
+    println(c.joinToString())*/
+
+    //58
+    /*val b = IntArray(n)
+    for (i in 1 until n){
+        b[i] = b[i-1] + a[i]
+    }
+    println(a.joinToString())
+    println(b.joinToString())*/
+
+
+    //59
+    /*val b = FloatArray(n)
+    var sum = 0f
+    for (i in 0 until n) {
+        a[i] = scan.nextInt()
+        sum += a[i]
+        b[i] = sum / (i+1)
+    }
+    println(b.joinToString())*/
+
+    //60
+    /*val b = IntArray(n)
+    for (i in 1 until n){
+
+    }
+    println(b.joinToString())*/
+
+
+    //63
+    /*val b = IntArray(n){scan.nextInt()}
+    val c = IntArray(2*n)
+    var i = 0 //a
+    var j = 0 //b
+    var k = 0 //c
+    while (i < n && j < n){
+        if (a[i] < b[j]){
+            c[k++] = a[i++]
+        } else {
+            c[k++] = b[j++]
+        }
+    }
+    while (i < n){
+        c[k++] = b[j++]
+    }*/
+
+
+
+
+
+
+    //    inkrementaciya  -> Increase
+    //    dekrementaciya  -> Decrease
+
+    /*var k = 9
+    var l = k--
+    k++
+    ++k
+    --l
+    println(k)
+    println(l)*/
 
 
 
