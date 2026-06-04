@@ -8,6 +8,18 @@ fun main() {
     val n = scan.nextInt()
     var a = IntArray(n){scan.nextInt()}
 
+
+    //    inkrementaciya  -> Increase
+    //    dekrementaciya  -> Decrease
+
+    /*var k = 9
+    var l = k--
+    k++
+    ++k
+    --l
+    println(k)
+    println(l)*/
+
     //1
     /*val n = scan.nextInt()
     val array = IntArray(n)
@@ -846,6 +858,70 @@ println()
 
 
     //64
+    /*val b = IntArray(n){scan.nextInt()}
+    val c = IntArray(n){scan.nextInt()}
+    val d = IntArray(n*3)
+    var i = 0 //a
+    var j = 0 //b
+    var k = 0 //c
+    var l = 0 //d
+    while (i < n && j < n && k < n){
+        if (a[i] > b[j] && a[i] > c[k]){
+            d[l++] = a[i++]
+        } else if (c[k] > a[i] && c[k] > b[j]){
+            d[l++] = c[k++]
+        } else if (b[j] > a[i] && b[j] > c[k]){
+            d[l++] = b[j++]
+        }
+    }
+    if (i == n) {
+        while (j < n && k < n){
+            d[l++] = if (b[j] > c[k]) b[j++]
+            else c[k++]
+        }
+    } else if (j == n){
+        while (i < n && k < n){
+            d[l++] = if (a[i] > c[k]) a[i++]
+            else c[k++]
+        }
+    }
+    else if (k == n){
+        while (i < n && j < n){
+            d[l++] = if (a[i] > c[k]) a[i++]
+            else b[j++]
+        }
+    }
+
+    println(a.joinToString())
+    println(b.joinToString())
+    println(c.joinToString())
+    println(d.joinToString())
+
+    //test case
+    5
+    98 78 64 15 67
+    68 13 65 49 28
+    31 62 95 84 76
+*/
+
+
+    //65
+    /*val k = scan.nextInt()    //ver from Mentor
+    for ( i in 0 until n){
+        if (i == k) continue
+        a[i] += a[k]
+    }
+    a[k] += a[k]*/
+
+    /*val p = a[k]     //ver from B
+    for (i in 0 until n) {
+        a[i] += p
+    }
+    println(a.joinToString())*/
+
+
+
+    //66
 
 
 
@@ -859,16 +935,11 @@ println()
 
 
 
-    //    inkrementaciya  -> Increase
-    //    dekrementaciya  -> Decrease
 
-    /*var k = 9
-    var l = k--
-    k++
-    ++k
-    --l
-    println(k)
-    println(l)*/
+
+
+
+
 
 
 
