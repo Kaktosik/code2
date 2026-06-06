@@ -922,9 +922,28 @@ println()
 
 
     //66
+    /*var ch = 0
+    for ( i in 0 until n){
+        a[i] = scan.nextInt()
+        if (a[i] != 0 && ch == 0 && a[i] % 2 == 0) ch = a[i]
+    }
+    for (i in 0 until n){
+        if (a[i] % 2 == 0) a[i] += ch
+    }
+    println(a.joinToString())*/
 
+    //67
+    /*var notch = 0
+    for (i in 0 until n){
+        a[i] = scan.nextInt()
+        if (a[i] != 0 && notch == 0 && a[i] % 2 == 1) notch = a[i]
+    }
+    for (i in 0 until n){
+        if (a[i] % 2 == 1) a[i] += notch
+    }
+    println(a.joinToString())*/
 
-
+    //68
 
 
 
