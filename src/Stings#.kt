@@ -15,7 +15,13 @@ fun main() {
     println(name.contains('d',  true))
     println(name.contains("d", true))
 
-
+    val k = "kOtLiN"
+    val a = k.toCharArray()
+    for (i in a.indices){
+        if (a[i].isLowerCase())a[i] = a[i].uppercase()[0]
+            else a[i] = a[i].lowercase()[0]
+    }
+    println(a.joinToString(""))
 
 
 

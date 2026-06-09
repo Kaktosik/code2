@@ -944,16 +944,64 @@ println()
     println(a.joinToString())*/
 
     //68
+    /*var min = Int.MAX_VALUE
+    var max = Int.MIN_VALUE
+    var minInd = 0
+    var maxInd = 0
+    for (i in a.indices){
+        a[i] = scan.nextInt()
+        if (a[i] > max){
+            max = a[i]
+            maxInd = i
+        }
+        if (a[i] < min){
+            min = a[i]
+            minInd = i
+        }
+    }
+    a[maxInd] = a[minInd].apply { a[minInd] = a[maxInd] }
+    println(a.joinToString())*/
+
+    //68 v2
+    /*var minInd = 0
+    var maxInd = 0
+    for (i in 1 until n){
+        if (a[i] > a[maxInd]){
+            maxInd = i
+        }
+        if (a[i] < a[minInd]){
+            minInd = i
+        }
+    }
+    a[maxInd] = a[minInd].apply { a[minInd] = a[maxInd] }
+    println(a.joinToString())*/
+
+
+    //69
+    /*for (i in 0 until n step 2){
+        a[i] = a[i+1].also { a[i+1] = a[i] }
+    }
+    println(a.joinToString())*/
 
 
 
+    //70
+    /*val h = n / 2
+    for(i in 0 until h){
+        a[i] = a[h + i].also { a[h + i] = a[i] }
+    }
+    println(a.joinToString())*/
+
+    //71
+   /* var nn = n
+    for (i in 0 until n-1){
+        a[i] = a[nn--].also { a[nn] = a[i] }
+    }
+    println(a.joinToString())*/
 
 
 
-
-
-
-
+    /*println(a.joinToString().reversed())*/
 
 
 
