@@ -993,17 +993,50 @@ println()
     println(a.joinToString())*/
 
     //71
-   /* var nn = n
-    for (i in 0 until n-1){
-        a[i] = a[nn--].also { a[nn] = a[i] }
-    }
+    /*a.reverse()
     println(a.joinToString())*/
-
-
 
     /*println(a.joinToString().reversed())*/
 
+    //72
+    /*val k = scan.nextInt()
+    val l = scan.nextInt()
+    for ( i in 0 .. (l-k) / 2){
+        a[k+i] = a[l-i].also { a[l-i] = a[k+i] }
+    }
+    println(a.joinToString())*/
 
+    //73
+    /*val k = scan.nextInt()
+    val l = scan.nextInt()
+    for ( i in 0 until (l-k) / 2){
+        a[k+i] = a[l-i].also { a[l-i] = a[k+i] }
+    }
+    println(a.joinToString())*/
+
+    //74
+    /*var max = Int.MIN_VALUE
+    var min = Int.MAX_VALUE
+    var maxInd = 0
+    var minInd = 0
+    for (i in 0 until n){
+        if (a[i] > max){
+            max = a[i]
+            maxInd = i
+        }
+        if (a[i] < min){
+            min = a[i]
+            minInd = i
+        }
+    }
+    val left = minOf(minInd, maxInd) + 1
+    val right = maxOf(minInd, maxInd)
+    for (i in left until right) a[i] = 0
+
+    println(a.joinToString())*/
+
+
+    //75
 
 
 
