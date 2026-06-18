@@ -1037,10 +1037,73 @@ println()
 
 
     //75
+    /*var max = Int.MIN_VALUE
+    var min = Int.MAX_VALUE
+    var minInd = 0
+    var maxInd = 0
+    for (i in 0 until n){
+        if (a[i] > max){
+            max = a[i]
+            maxInd = i
+        }
+        if (a[i] < min){
+            min = a[i]
+            minInd = i
+        }
+    }
+    val l = minOf(minInd, maxInd)
+    val r = maxOf(minInd, maxInd)
+    for (i in l until r) a[l+i] = a[r-i].also{ a[r-i] = a[l+i]}
+    println(a.joinToString())*/
+
+    //76
+    /*var i = 1
+    while (i < n-1){
+        if (a[i] > a[i-1] && a[i] > a[i+1]){
+            a[i] = 0
+            i+=2
+        } else i++
+    }
+    println(a.joinToString())*/
+
+    //77
+    /*var i = 1
+    while (i < n-1){
+        if (a[i] < a[i-1] && a[i] < a[i+1]){
+            a[i] = a[i] * a[i]
+            i += 2
+        } else i++
+    }
+    println(a.joinToString())*/
+
+    //78
 
 
 
 
+
+
+    //79
+    /*for (i in n-1 downTo 1){
+        a[i] = a[i-1]
+    }
+    a[0] = 0
+    println(a.joinToString())*/
+
+
+    //80
+    /*for (i in 1 until n-1){
+        a[i] = a[i+1]
+    }
+    a[0] = 0
+    println(a.joinToString())*/
+
+    //81
+    /*val k = scan.nextInt()
+    for (i in 0 until n-k){
+        a[i] = a[i+k]
+    }
+    println(a.joinToString())*/
 
 
 }
