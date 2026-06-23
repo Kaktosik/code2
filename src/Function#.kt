@@ -45,6 +45,7 @@ fun main() {
     67.chet()
     25.5.pp()
 
+    println(powerA3(3f))
 }
 
 fun Privet(komu: String = "Joseph"){
@@ -60,4 +61,17 @@ fun chtoto(a: Int, b: Int): Int{
         a
     } else b
 }
+
+fun powerA3(x: Float){
+    var cube = 1f
+    for (i in 1 .. 3){
+        cube *= x
+    }
+    println("$x³ = $cube")
+}
+
+
+
+
+
 

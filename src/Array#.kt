@@ -1105,5 +1105,23 @@ println()
     }
     println(a.joinToString())*/
 
+    //82
+    /*val k = scan.nextInt()
+    for (i in 0 until n-k){
+        a[i] = a[i+k]
+    }
+    for (i in n-k until n){
+        a[i] = 0
+    }
+    println(a.joinToString())*/
+
+    //83
+    val m = a[0]
+    for (i in n-1 downTo 0){
+        a[i] = a[i+1]
+    }
+    a[n] = m
+    println(a.joinToString())
+
 
 }
