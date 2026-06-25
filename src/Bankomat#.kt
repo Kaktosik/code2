@@ -10,7 +10,7 @@ data class Card(private var pincode : String,
 }
 
 fun main(){
-    val card = Card()
+    val cardd = Card()
     println("Write a Pincode")
 
 }

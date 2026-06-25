@@ -122,7 +122,7 @@ class DuoLingoPerson : Person(){
 open class VideoGame{
     var nameOfGame : String = ""
     var type : String = ""
-    open fun playing {
+    open fun playing() {
 
     }
 }
