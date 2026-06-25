@@ -1,4 +1,4 @@
-fun main(){
+
 //    object oriented programing ->
 //
 //    inheritance -> переводится как ⟪Наследование, Наследие⟫
@@ -40,36 +40,7 @@ klassqa nasil qaldiriwi mumkin; */
     }
     class BigTC: TransportCar() //no properties
 */
-    fun main(){
-        //Inheritance
-        /*val car1 = Car()
-        car1.name = "Cobalt"
-        car1.createdYear = 2026
-        car1.type = "light car"
-        car1.drive()
 
-        var transportCar1 = TransportCar()
-        transportCar1.name = "bus"
-        transportCar1.createdYear = 2025
-        transportCar1.drive()
-
-        transportCar1.showSeats()
-
-        val train = BigTC()
-        train.seats = 100
-        train.showSeats()
-        train.name = "Train"
-        train.drive()*/
-
-
-
-
-
-
-
-
-
-    }
 //Animal  - atasi
 //Pet - balasi
 //Domestic - aqligi
@@ -92,10 +63,68 @@ klassqa nasil qaldiriwi mumkin; */
 //
 //
 
+//Polymorphism → является 4-ым принципом OOP →
+//    Задача бывает одной но выполнение будут разными, пульт
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+fun main(){
+
+    val usaPerson = Person()
+    usaPerson.nation = "American"
+    usaPerson.language = "English language"
+    usaPerson.speaking()
+    usaPerson.Culture()
 
 
 
 }
+
+
+
+
+/*
+open class Person {
+    var nation : String = ""
+    var language : String = ""
+    var healthStatus : String = ""
+
+    open fun speaking(){
+        println("$nation speaks $language")
+    }
+    open fun Culture(){
+        println("$nation's culture is beautiful")
+    }
+
+}
+
+class DuoLingoPerson : Person(){
+    var secondLanguage : String = "russian"
+    override fun speaking() {
+
+    }
+}*/
+
+
+
+open class VideoGame{
+    var nameOfGame : String = ""
+    var type : String = ""
+    open fun playing {
+
+    }
+}
+
+
