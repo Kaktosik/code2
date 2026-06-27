@@ -81,12 +81,12 @@ klassqa nasil qaldiriwi mumkin; */
 
 
 fun main(){
-
+/*
     val usaPerson = Person()
     usaPerson.nation = "American"
     usaPerson.language = "English language"
     usaPerson.speaking()
-    usaPerson.Culture()
+    usaPerson.Culture()*/
 
 
 
